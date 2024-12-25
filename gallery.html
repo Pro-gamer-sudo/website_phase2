@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gallery - KGMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" href="./images/1.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="galstyle.css">
+
+</head>
+
+<body>
+
+<header class="topnav1">
+    <div class="logo-container">
+        <img src="./images/1.jpg" alt="School Logo" class="round-image">
+        <p>KRISHNASWAMY NAGAR GANGA NAGAR MATRICULATION HIGHER SECONDARY SCHOOL</p>
+    </div>
+    <span class="hamburger" onclick="toggleMenu()">
+      <div class="container2" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+  </span>
+      <nav class="menu" id="myMenu">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="./gallery.html ">GALLERY</a>
+        <a href="facilities.html">FACILITIES</a>
+        <a href="faculties.html">FACULTIES</a>
+    </nav>
+</header>
+<div class="image-containerw">
+    <div class="textq">GALLERY</div>
+  </div>
+<main>
+  <div id="myBtnContainer">
+    <!-- <button class="btn active" onclick="filterSelection('all')"> Show all</button> -->
+    <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+    <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+    <button class="btn" onclick="filterSelection('people')"> ROBOTICS</button>
+  </div>
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+</div>
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column nature">
+      <div class="content">
+        <img src="./images/gallery1.jpg" alt="photos" class = "image" onclick="expandImage(this)" style="width:100%">
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+        <img src ="./images/gallery2.jpg" alt="photos" class = "image" onclick="expandImage(this)" style="width:100%">
+        
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+      <img src="./images/gallery3.jpg" alt="photos" class = "image" onclick="expandImage(this)" style="width:100%">
+        
+      </div>
+    </div>
+    
+    <div class="column cars">
+      <div class="content">
+        <img src="./images/gallery4.jpg" alt="photos" class = "image" onclick="expandImage(this)" style="width:100%">
+       
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+      <img src="./images/gallery5.jpg" alt="photos" class = "image" onclick="expandImage(this)" style="width:100%">
+        
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+      <img src="./images/gallery6.jpg" alt="photos" class = "image" onclick="expandImage(this)" style="width:100%">
+       
+      </div>
+    </div>
+  
+    <div class="column people">
+      <div class="content">
+        <img src="./images/gallery7.jpg" alt="photos" class = "image" onclick="expandImage(this)" style="width:100%">
+       
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+      <img src="./images/gallery8.jpg" alt="photos" class = "image" onclick="expandImage(this)" style="width:100%">
+        
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+      <img src="./images/gallery9.jpg" alt="photos" class = "image" onclick="expandImage(this)" style="width:100%">
+        
+        
+      </div>
+    </div>
+  <!-- <section id="gallery" class="section">
+    
+      <div class="gallery-container" id="gallery-container">
+           Images will be inserted here by JavaScript -->
+          <!-- <img src ="./images/gallery1.jpg" alt="photos" class = "image" onclick="expandImage(this)"></img>
+          <img src ="./images/gallery2.jpg" alt="photos" class = "image" onclick="expandImage(this)"></img>
+          <img src ="./images/gallery3.jpg" alt="photos" class = "image" onclick="expandImage(this)"></img>
+          <img src ="./images/gallery4.jpg" alt="photos" class = "image" onclick="expandImage(this)"></img>
+          <img src ="./images/gallery5.jpg" alt="photos" class = "image" onclick="expandImage(this)"></img>
+          <img src ="./images/gallery6.jpg" alt="photos" class = "image" onclick="expandImage(this)"></img>
+          <img src ="./images/gallery7.jpg" alt="photos" class = "image" onclick="expandImage(this)"></img>
+          <img src ="./images/gallery8.jpg" alt="photos" class = "image" onclick="expandImage(this)"></img>
+          <img src ="./images/gallery9.jpg" alt="photos" class = "image" onclick="expandImage(this)"></img>
+          <img src ="./images/gallery10.jpg" alt="photos" class = "image" onclick="expandImage(this)"></img>
+          <img src ="./images/gallery11.jpg" alt="photos" class = "image" onclick="expandImage(this)"></img>
+          <img src ="./images/gallery12.jpg" alt="photos" class = "image" onclick="expandImage(this)"></img>
+      </div>  -->
+      <!-- <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+      <button id="loadMoreBtn">Load More</button>
+  </section> -->
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>Find Us Here</h2>
+            <div id="map">
+                <div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=62,%20School%20Rd,%20Vasantha%20Nagar,%20Krishnaswamy%20Nagar,%20Sowripalayam%20Pirivu,%20Ramanathapuram,%20Coimbatore,%20Tamil%20Nadu%20641045+(KGMS)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps devices</a></iframe></div>
+            </div>
+        </div>
+        <div class="footer-section contact-info">
+            <h3>Contact Information</h3>
+            <!-- <p>Address: 62, School Rd, Vasantha Nagar, Krishnaswamy Nagar, Sowripalayam Pirivu, Ramanathapuram, Coimbatore, Tamil Nadu 641045</p> -->
+            <p>Phone: 0422 231 2992 </p>
+            <p>Email: kgmsmatric@gmail.com</p>
+        </div>
+        <div class="footer-section quick-links">
+            <h3 class="quick">Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="faculties.html">Faculties</a></li>
+            </ul>
+        </div>  
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 KRISHNASWAMY NAGAR GANGA NAGAR MATRICULATION HIGHER SECONDARY SCHOOL. All rights reserved.</p>
+    </div>
+</footer>
+<!-- Back to Top Button -->
+<button onclick="topFunction()" id="backToTopBtn" title="Go to top" style='font-size:25px;'>&#8593</button>
+
+<script src="script.js"></script>
+</body>
+</html>
